@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 14%;
+
+    --primary: 167 72% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 167 20% 96%;
+    --secondary-foreground: 210 20% 14%;
+
+    --muted: 167 10% 95%;
+    --muted-foreground: 210 10% 46%;
+
+    --accent: 167 20% 96%;
+    --accent-foreground: 210 20% 14%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 167 13% 88%;
+    --input: 167 13% 88%;
+    --ring: 167 72% 42%;
+
+    --radius: 0.5rem;
+
+    /* Documentation-specific tokens */
+    --sidebar-bg: 167 40% 8%;
+    --sidebar-fg: 167 14% 75%;
+    --sidebar-fg-active: 0 0% 100%;
+    --sidebar-fg-muted: 167 14% 50%;
+    --sidebar-border: 167 30% 15%;
+    --sidebar-hover: 167 30% 12%;
+    --sidebar-active: 167 72% 42%;
+    --sidebar-width: 280px;
+
+    --toc-width: 220px;
+
+    --code-bg: 167 15% 96%;
+    --code-fg: 210 20% 14%;
+    --code-border: 167 13% 88%;
+
+    --code-block-bg: 167 40% 8%;
+    --code-block-fg: 167 14% 85%;
+
+    --link: 167 72% 42%;
+    --link-hover: 167 72% 32%;
+
+    --callout-info-bg: 167 50% 97%;
+    --callout-info-border: 167 72% 60%;
+    --callout-info-fg: 167 72% 30%;
+
+    --callout-warning-bg: 38 100% 97%;
+    --callout-warning-border: 38 92% 60%;
+    --callout-warning-fg: 38 80% 35%;
+
+    --callout-tip-bg: 167 76% 97%;
+    --callout-tip-border: 167 72% 42%;
+    --callout-tip-fg: 167 72% 28%;
+
+    --content-max-width: 768px;
+
+    --sidebar-background: 167 40% 8%;
+    --sidebar-foreground: 167 14% 75%;
+    --sidebar-primary: 167 72% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 167 30% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border-color: 167 30% 15%;
+    --sidebar-ring: 167 72% 42%;
+  }
+
+  .dark {
+    --background: 167 30% 6%;
+    --foreground: 167 10% 90%;
+
+    --card: 167 30% 8%;
+    --card-foreground: 167 10% 90%;
+
+    --popover: 167 30% 8%;
+    --popover-foreground: 167 10% 90%;
+
+    --primary: 167 72% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 167 20% 12%;
+    --secondary-foreground: 167 10% 90%;
+
+    --muted: 167 15% 14%;
+    --muted-foreground: 167 10% 55%;
+
+    --accent: 167 20% 14%;
+    --accent-foreground: 167 10% 90%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 167 15% 18%;
+    --input: 167 15% 18%;
+    --ring: 167 72% 42%;
+
+    --sidebar-bg: 167 30% 4%;
+    --sidebar-fg: 167 14% 70%;
+    --sidebar-fg-active: 0 0% 100%;
+    --sidebar-fg-muted: 167 14% 45%;
+    --sidebar-border: 167 20% 12%;
+    --sidebar-hover: 167 20% 10%;
+    --sidebar-active: 167 72% 42%;
+
+    --code-bg: 167 20% 12%;
+    --code-fg: 167 10% 85%;
+    --code-border: 167 15% 18%;
+
+    --code-block-bg: 167 30% 4%;
+    --code-block-fg: 167 14% 80%;
+
+    --link: 167 72% 50%;
+    --link-hover: 167 72% 60%;
+
+    --callout-info-bg: 167 30% 10%;
+    --callout-info-border: 167 50% 35%;
+    --callout-info-fg: 167 50% 65%;
+
+    --callout-warning-bg: 38 30% 12%;
+    --callout-warning-border: 38 60% 40%;
+    --callout-warning-fg: 38 60% 65%;
+
+    --callout-tip-bg: 167 30% 10%;
+    --callout-tip-border: 167 50% 35%;
+    --callout-tip-fg: 167 50% 60%;
+
+    --sidebar-background: 167 30% 4%;
+    --sidebar-foreground: 167 14% 70%;
+    --sidebar-primary: 167 72% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 167 20% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border-color: 167 20% 12%;
+    --sidebar-ring: 167 72% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight text-foreground;
+  }
+}
+
+@layer components {
+  .doc-prose h1 {
+    @apply text-3xl font-bold mb-4 mt-0;
+  }
+
+  .doc-prose h2 {
+    @apply text-2xl font-semibold mb-3 mt-10 pb-2 border-b border-border;
+  }
+
+  .doc-prose h3 {
+    @apply text-xl font-semibold mb-2 mt-8;
+  }
+
+  .doc-prose p {
+    @apply text-base leading-7 mb-4 text-foreground/85;
+  }
+
+  .doc-prose ul {
+    @apply list-disc pl-6 mb-4 space-y-1;
+  }
+
+  .doc-prose ol {
+    @apply list-decimal pl-6 mb-4 space-y-1;
+  }
+
+  .doc-prose li {
+    @apply text-base leading-7 text-foreground/85;
+  }
+
+  .doc-prose a {
+    @apply text-link hover:text-link-hover underline underline-offset-2;
+  }
+
+  .doc-prose code:not(pre code) {
+    @apply bg-code text-code-fg px-1.5 py-0.5 rounded text-sm font-mono border border-code-border;
+  }
+
+  .doc-prose pre {
+    @apply bg-code-block text-code-block-fg rounded-lg p-4 mb-4 overflow-x-auto font-mono text-sm leading-relaxed;
+  }
+
+  .doc-prose pre code {
+    @apply bg-transparent p-0 border-0 text-inherit;
+  }
+
+  .doc-prose blockquote {
+    @apply border-l-4 border-primary/30 pl-4 italic text-muted-foreground my-4;
+  }
+
+  .doc-prose table {
+    @apply w-full border-collapse mb-4;
+  }
+
+  .doc-prose th {
+    @apply text-left font-semibold p-3 bg-secondary border-b-2 border-border text-sm;
+  }
+
+  .doc-prose td {
+    @apply p-3 border-b border-border text-sm;
+  }
+
+  .doc-prose hr {
+    @apply my-8 border-border;
+  }
+
+  .sidebar-section-container {
+    @apply mt-[38px] first:mt-0;
+  }
+
+  .sidebar-links-container {
+    @apply mt-4 space-y-1 pl-6;
+  }
+
+  .sidebar-link {
+    @apply block px-4 py-1.5 text-[13.5px] font-medium rounded-lg transition-all duration-200 text-muted-foreground/75 hover:text-foreground;
+  }
+
+  .sidebar-link:hover {
+    @apply bg-secondary/60 text-foreground;
+  }
+
+  .sidebar-link.active {
+    @apply bg-primary/10 text-primary;
+    text-shadow: -0.2px 0 0 currentColor, 0.2px 0 0 currentColor;
+  }
+
+  .sidebar-section-title {
+    @apply px-4 text-[14px] font-bold text-foreground/90 transition-all duration-300;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+  }
+
+  .sidebar-section-title.active {
+    @apply text-foreground;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.15), 0 0 30px rgba(var(--primary), 0.1);
+  }
+
+  /* Copy button on code blocks */
+  .code-copy-btn {
+    @apply absolute top-2 right-2 px-2 py-1 rounded text-xs font-medium opacity-0 transition-all duration-200 z-10;
+    background: hsl(var(--secondary));
+    color: hsl(var(--foreground));
+  }
+
+  .code-copy-btn:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .code-block-wrapper:hover .code-copy-btn {
+    @apply opacity-100;
+  }
+
+  /* Active ToC link */
+  .toc-link {
+    @apply block text-sm leading-relaxed text-muted-foreground hover:text-foreground transition-colors py-2;
+  }
+
+  .toc-link.active {
+    @apply text-primary;
+    text-shadow: -0.2px 0 0 currentColor, 0.2px 0 0 currentColor;
+  }
+
+  /* Search modal */
+  .search-overlay {
+    @apply fixed inset-0 bg-foreground/50 backdrop-blur-sm z-[100] flex items-start justify-center pt-[15vh];
+    animation: fadeIn 0.15s ease-out;
+  }
+
+  .search-modal {
+    @apply w-full max-w-xl bg-background border border-border rounded-xl shadow-2xl overflow-hidden;
+    animation: slideUp 0.2s ease-out;
+  }
+
+  .search-result {
+    @apply px-4 py-3 cursor-pointer transition-colors text-sm;
+  }
+
+  .search-result:hover,
+  .search-result.selected {
+    @apply bg-secondary;
+  }
+
+  /* Sidebar toggle */
+  .sidebar-section-toggle {
+    @apply flex items-center justify-between w-full px-3 py-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground cursor-pointer rounded-md transition-colors;
+  }
+
+  .sidebar-section-toggle:hover {
+    @apply bg-secondary/50;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .doc-prose h2,
+  .doc-prose h3 {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
