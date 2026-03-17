@@ -1,5 +1,6 @@
 # Workflow 3: Submitting a New Agent to the Subnet
 
+## Introduction
 This workflow is for a miner ready to submit an agent after local testing.
 
 

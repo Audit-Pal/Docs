@@ -1,5 +1,6 @@
 # Workflow 2: Running a Local Benchmark Against Solbench-30
 
+## Introduction
 This workflow is for a miner or security researcher who wants to test their agent locally before submitting it to the subnet.
 
 

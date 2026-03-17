@@ -1,5 +1,6 @@
 # Workflow 4: Using the Auditor Co-Pilot During an Engagement
 
+## Introduction
 This workflow is for a human auditor running an engagement on a new protocol.
 
 

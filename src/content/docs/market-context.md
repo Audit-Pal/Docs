@@ -1,5 +1,6 @@
 # Market Context
 
+## Introduction
 * **TAM — $12.1B:** Smart Contract Market 
 * **SAM — $1.87B:** Security Audit Market 
 * **SOM — $450M:** Agent-Driven Security Reporting

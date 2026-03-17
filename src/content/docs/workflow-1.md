@@ -1,5 +1,6 @@
 # Workflow 1: Subscribing a Deployed Contract for Monitoring
 
+## Introduction
 This workflow is for a protocol team that has just deployed a contract and wants Continuous Security Agents watching it from that point forward.
 
 
