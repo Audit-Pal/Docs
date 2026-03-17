@@ -12,62 +12,67 @@ export const docsStructure: DocSection[] = [
   {
     title: "Introduction",
     pages: [
-      { slug: "overview", title: "AuditPal Overview", description: "The vision, positioning, and core identity of AuditPal" },
-      { slug: "core-insight", title: "Core Insight", description: "Why audit uncertainty — not speed — is the real bottleneck" },
-      { slug: "key-concept", title: "Key Concept", description: "Reasoning amplification engine for smart contract auditors" },
-      { slug: "tagline-positioning", title: "Tagline & Positioning", description: "Brand positioning and operating system philosophy" },
+      { slug: "overview", title: "AuditPal Overview", description: "Temporary placeholder content" },
+      { slug: "core-insights", title: "Core Insights", description: "Temporary placeholder content" },
+      { slug: "philosophy", title: "Philosophy", description: "Temporary placeholder content" },
+      { slug: "key-features", title: "Key Features", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Problem & Philosophy",
+    title: "Ecosystem Overview",
     pages: [
-      { slug: "audit-bottleneck", title: "The Real Bottleneck in Auditing", description: "Execution overhead vs. high-value reasoning work" },
-      { slug: "humans-vs-execution", title: "Humans = Decision Engine", description: "Separating reasoning from execution infrastructure" },
-      { slug: "operating-system-model", title: "Operating System Model", description: "What it means to be the OS for smart contract audits" },
+      { slug: "innovation-layer", title: "Innovation Layer", description: "Temporary placeholder content" },
+      { slug: "application-layer", title: "Application Layer", description: "Temporary placeholder content" },
+      { slug: "auditpal-operating-system", title: "AuditPal Operating System", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "How AuditPal Works",
+    title: "Subnet Architecture",
     pages: [
-      { slug: "copilot-workspace", title: "Auditor Co-Pilot Workspace", description: "Application layer for simulations, modeling, and proof generation" },
-      { slug: "state-simulation", title: "State Machine Simulation", description: "Modeling full contract state space and adversarial interactions" },
-      { slug: "executable-proofs", title: "Executable Proof System", description: "Proof-backed vulnerability validation via exploit scripts" },
-      { slug: "execution-layer", title: "Execution Layer", description: "Scanning, fuzzing, diffing, and workflow automation" },
+      { slug: "system-overview", title: "System Overview", description: "Temporary placeholder content" },
+      { slug: "inference-gateway", title: "Inference Gateway", description: "Temporary placeholder content" },
+      { slug: "gatekeepers-validators", title: "Gatekeepers & Validators", description: "Temporary placeholder content" },
+      { slug: "miners-agents", title: "Miners & Agents", description: "Temporary placeholder content" },
+      { slug: "console-dashboard", title: "Console / Dashboard", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Decentralized Intelligence",
+    title: "CLI",
     pages: [
-      { slug: "bittensor-subnet", title: "Bittensor Subnet", description: "Competitive AI swarm powering audit intelligence" },
-      { slug: "proof-of-audit", title: "Proof of Audit Incentive Model", description: "Rewarding accuracy, latency, and zero-noise output" },
-      { slug: "subnet-vs-application", title: "Subnet vs Application", description: "Innovation hub vs production audit environment" },
-      { slug: "continuous-improvement", title: "Continuous Learning System", description: "How decentralized competition evolves execution quality" },
+      { slug: "cli-overview", title: "CLI Overview", description: "Temporary placeholder content" },
+      { slug: "core-commands", title: "Core Commands", description: "Temporary placeholder content" },
+      { slug: "example-workflows", title: "Example Workflows", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Benchmarking & Research",
+    title: "Incentive Design",
     pages: [
-      { slug: "benchmark-infrastructure", title: "Benchmark Infrastructure", description: "Live evaluation systems for audit agent performance" },
-      { slug: "solbench-30", title: "AuditPal-Solbench-30", description: "30 high-impact vulnerability benchmark suite" },
-      { slug: "evmbench", title: "OpenAI EVMbench", description: "Competitive evaluation environment for EVM auditing agents" },
+      { slug: "incentive-objective", title: "Objective", description: "Temporary placeholder content" },
+      { slug: "incentive-mechanism-overview", title: "Incentive Mechanism Overview", description: "Temporary placeholder content" },
+      { slug: "miner-incentives", title: "Miner Incentives", description: "Temporary placeholder content" },
+      { slug: "validator-incentives", title: "Validator Incentives", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Value Proposition",
+    title: "Developer Guides",
     pages: [
-      { slug: "unified-value", title: "Unified Value Proposition", description: "Reducing uncertainty through proof-driven validation" },
-      { slug: "auditor-benefits", title: "Benefits for Auditors", description: "Faster reasoning, mathematical validation, reduced cognitive load" },
-      { slug: "developer-benefits", title: "Benefits for Developers", description: "Noise-free findings and continuous security coverage" },
-      { slug: "ecosystem-impact", title: "Ecosystem Impact", description: "From static audits to evolving security assurance" },
+      { slug: "miner-setup-guide", title: "Miner Setup Guide", description: "Temporary placeholder content" },
+      { slug: "validator-setup-guide", title: "Validator Setup Guide", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Roadmap",
+    title: "Product Roadmap",
     pages: [
-      { slug: "sentinel-2", title: "Sentinel-2", description: "Formal logic translation engine" },
-      { slug: "multi-chain-expansion", title: "Multi-Chain Expansion", description: "Support for Rust and Move ecosystems" },
-      { slug: "onchain-monitoring", title: "Autonomous Monitoring Nodes", description: "On-chain monitoring and circuit-breaker activation" },
+      { slug: "product-roadmap", title: "Product Roadmap", description: "Temporary placeholder content" },
     ],
+  },
+  {
+    title: "Resources",
+    pages: [{ slug: "media-community", title: "Media & Community", description: "Temporary placeholder content" }],
+  },
+  {
+    title: "Conclusion",
+    pages: [{ slug: "conclusion", title: "Conclusion", description: "Temporary placeholder content" }],
   },
 ];
 
