@@ -11,7 +11,7 @@ export interface DocSection {
 }
 export const docsStructure: DocSection[] = [
   {
-    title: "Introduction",
+    title: "1. Introduction",
     pages: [
       { slug: "overview", title: "AuditPal Overview", description: "Temporary placeholder content" },
       { slug: "core-insights", title: "Core Insights", description: "Temporary placeholder content" },
@@ -20,7 +20,7 @@ export const docsStructure: DocSection[] = [
     ],
   },
   {
-    title: "Ecosystem Overview",
+    title: "2. Ecosystem Overview",
     pages: [
       { slug: "innovation-layer", title: "Innovation Layer", description: "The competitive subnet layer" },
       { slug: "application-layer", title: "Application Layer", description: "Interaction surface for protocols and auditors" },
@@ -28,7 +28,7 @@ export const docsStructure: DocSection[] = [
     ],
   },
   {
-    title: "Subnet Architecture",
+    title: "3. Subnet Architecture",
     pages: [
       { slug: "system-overview", title: "System Overview", description: "Temporary placeholder content" },
       { slug: "inference-gateway", title: "Inference Gateway", description: "Temporary placeholder content" },
@@ -38,7 +38,7 @@ export const docsStructure: DocSection[] = [
     ],
   },
   {
-    title: "CLI",
+    title: "4. CLI",
     pages: [
       { slug: "cli-overview", title: "CLI Overview", description: "Temporary placeholder content" },
       { slug: "core-commands", title: "Core Commands", description: "Temporary placeholder content" },
@@ -56,7 +56,7 @@ export const docsStructure: DocSection[] = [
     ],
   },
   {
-    title: "Incentive Design",
+    title: "5. Incentive Design",
     pages: [
       { slug: "incentive-objective", title: "Objective", description: "Temporary placeholder content" },
       { slug: "incentive-mechanism-overview", title: "Incentive Mechanism Overview", description: "Temporary placeholder content" },
@@ -65,20 +65,20 @@ export const docsStructure: DocSection[] = [
     ],
   },
   {
-    title: "Developer Guides",
+    title: "6. Developer Guides",
     pages: [
       { slug: "miner-setup-guide", title: "Miner Setup Guide", description: "Temporary placeholder content" },
       { slug: "validator-setup-guide", title: "Validator Setup Guide", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Product Roadmap",
+    title: "7. Product Roadmap",
     pages: [
       { slug: "product-roadmap", title: "Product Roadmap", description: "Temporary placeholder content" },
     ],
   },
   {
-    title: "Resources",
+    title: "8. Resources",
     pages: [
       { 
         slug: "resources", 
@@ -92,7 +92,7 @@ export const docsStructure: DocSection[] = [
     ],
   },
   {
-    title: "Conclusion",
+    title: "9. Conclusion",
     pages: [{ slug: "conclusion", title: "Conclusion", description: "Temporary placeholder content" }],
   },
 ];
