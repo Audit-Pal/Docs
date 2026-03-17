@@ -79,7 +79,17 @@ export const docsStructure: DocSection[] = [
   },
   {
     title: "Resources",
-    pages: [{ slug: "media-community", title: "Media & Community", description: "Temporary placeholder content" }],
+    pages: [
+      { 
+        slug: "resources", 
+        title: "Resources", 
+        description: "Links and market analysis",
+        children: [
+          { slug: "media-community", title: "Media and Community" },
+          { slug: "market-context", title: "Market Context" },
+        ]
+      }
+    ],
   },
   {
     title: "Conclusion",
