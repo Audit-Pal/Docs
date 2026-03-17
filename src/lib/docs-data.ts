@@ -21,9 +21,9 @@ export const docsStructure: DocSection[] = [
   {
     title: "Ecosystem Overview",
     pages: [
-      { slug: "innovation-layer", title: "Innovation Layer", description: "Temporary placeholder content" },
-      { slug: "application-layer", title: "Application Layer", description: "Temporary placeholder content" },
-      { slug: "auditpal-operating-system", title: "AuditPal Operating System", description: "Temporary placeholder content" },
+      { slug: "innovation-layer", title: "Innovation Layer", description: "The competitive subnet layer" },
+      { slug: "application-layer", title: "Application Layer", description: "Interaction surface for protocols and auditors" },
+      { slug: "auditpal-products", title: "AuditPal Products", description: "Continuous Security Agents & Auditor Co-Pilot" },
     ],
   },
   {
