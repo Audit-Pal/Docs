@@ -2,6 +2,7 @@ export interface DocPage {
   slug: string;
   title: string;
   description?: string;
+  children?: DocPage[];
 }
 
 export interface DocSection {
@@ -41,7 +42,17 @@ export const docsStructure: DocSection[] = [
     pages: [
       { slug: "cli-overview", title: "CLI Overview", description: "Temporary placeholder content" },
       { slug: "core-commands", title: "Core Commands", description: "Temporary placeholder content" },
-      { slug: "example-workflows", title: "Example Workflows", description: "Temporary placeholder content" },
+      { 
+        slug: "example-workflows", 
+        title: "Example Workflows", 
+        description: "Step-by-step guides for common tasks",
+        children: [
+          { slug: "workflow-1", title: "Workflow 1: Subscribing", description: "Monitoring setup" },
+          { slug: "workflow-2", title: "Workflow 2: Benchmarking", description: "Local testing" },
+          { slug: "workflow-3", title: "Workflow 3: Submitting", description: "Subnet registration" },
+          { slug: "workflow-4", title: "Workflow 4: Co-Pilot", description: "Auditor engagement" },
+        ]
+      },
     ],
   },
   {

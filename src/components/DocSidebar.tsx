@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { docsStructure } from "@/lib/docs-data";
 import { X, ChevronDown, ChevronRight, BookOpen, AlertTriangle, Cpu, Network, BarChart3, Award, Map } from "lucide-react";
-import { getMarkdownContent, extractHeadings } from "@/lib/markdown-loader";
 
 interface DocSidebarProps {
   mobileOpen: boolean;
@@ -22,9 +21,6 @@ const sectionIcons: Record<string, typeof BookOpen> = {
 export function DocSidebar({ mobileOpen, onClose }: DocSidebarProps) {
   const location = useLocation();
   const currentSlug = location.pathname.replace("/docs/", "") || "overview";
-
-  const currentContent = getMarkdownContent(currentSlug);
-  const activeHeadings = currentContent ? extractHeadings(currentContent).filter(h => h.level === 2 || h.level === 3) : [];
 
   // Track which sections are open — auto-expand the one containing active page
   const [openSections, setOpenSections] = useState<Record<string, boolean>>(() => {
@@ -95,7 +91,7 @@ export function DocSidebar({ mobileOpen, onClose }: DocSidebarProps) {
 
                 <div className="sidebar-links-container">
                   {section.pages.map((page) => (
-                    <div key={page.slug}>
+                    <div key={page.slug} className="space-y-1">
                       <Link
                         to={`/docs/${page.slug}`}
                         className={`sidebar-link ${currentSlug === page.slug ? "active" : ""}`}
@@ -104,26 +100,18 @@ export function DocSidebar({ mobileOpen, onClose }: DocSidebarProps) {
                         <span className="truncate">{page.title}</span>
                       </Link>
                       
-                      {/* Nested Headings for Active Page */}
-                      {currentSlug === page.slug && activeHeadings.length > 0 && (
-                        <div className="pl-3 mt-1 mb-2 space-y-1 border-l border-border/50 ml-3">
-                          {activeHeadings.map(heading => (
-                            <a
-                              key={heading.id}
-                              href={`#${heading.id}`}
-                              className="block text-[13px] text-muted-foreground hover:text-foreground py-1 px-2 transition-colors truncate"
-                              style={{ paddingLeft: `${(heading.level - 2) * 8}px` }}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                const el = document.getElementById(heading.id);
-                                if (el) {
-                                  el.scrollIntoView({ behavior: "smooth" });
-                                  onClose();
-                                }
-                              }}
+                      {/* Render nested children if present */}
+                      {page.children && (
+                        <div className="pl-4 space-y-1 border-l border-border/50 ml-4">
+                          {page.children.map((child) => (
+                            <Link
+                              key={child.slug}
+                              to={`/docs/${child.slug}`}
+                              className={`sidebar-link text-[13px] ${currentSlug === child.slug ? "active" : ""}`}
+                              onClick={onClose}
                             >
-                              {heading.title}
-                            </a>
+                              <span className="truncate">{child.title}</span>
+                            </Link>
                           ))}
                         </div>
                       )}
