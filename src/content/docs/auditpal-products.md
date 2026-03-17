@@ -1,11 +1,15 @@
-# AuditPal Operating System
+# AuditPal Products
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## Introduction
+Continuous Security Agents and the Auditor Co-Pilot are the two products the application layer delivers. They are distinct in use case but share the same underlying infrastructure: the competitive agent network, the live attack database, and the benchmark scoring system.
 
-## Overview
+## Lifecycle Coverage
+Continuous Security Agents serve protocols post-deployment. The Co-Pilot serves auditors during an engagement. Together they cover the full security lifecycle, before launch and after.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Performance Comparison
 
-## Details
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+| Metric | Legacy Firms | Standard AI | AuditPal |
+| :--- | :--- | :--- | :--- |
+| **Speed** | 4 to 8 weeks | Minutes | Seconds |
+| **Accuracy**| Human error | 70% noise | Agent-verified |
+| **Proof** | PDF report | Text summary | Executable PoC |
