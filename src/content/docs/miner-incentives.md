@@ -5,4 +5,4 @@ Miners earn TAO rewards when their agents outperform existing benchmarks. Reward
 
 This means the subnet automatically directs the best agents toward the contracts that matter most. It is not a manual allocation decision. It is a market outcome driven by where risk and demand are concentrated.
 
-*[TBD: Specific reward calculation formula, benchmark cycle duration, minimum performance thresholds for reward eligibility]*
+[TBD: Specific reward calculation formula, benchmark cycle duration, minimum performance thresholds for reward eligibility]
