@@ -88,22 +88,49 @@ export const docsStructure: DocSection[] = [
 ];
 
 export function getPageBySlug(slug: string): DocPage | undefined {
+  const findPage = (pages: DocPage[]): DocPage | undefined => {
+    for (const page of pages) {
+      if (page.slug === slug) return page;
+      if (page.children) {
+        const found = findPage(page.children);
+        if (found) return found;
+      }
+    }
+    return undefined;
+  };
+
   for (const section of docsStructure) {
-    const page = section.pages.find((p) => p.slug === slug);
+    const page = findPage(section.pages);
     if (page) return page;
   }
   return undefined;
 }
 
 export function getSectionBySlug(slug: string): DocSection | undefined {
+  const hasPage = (pages: DocPage[]): boolean => {
+    for (const page of pages) {
+      if (page.slug === slug) return true;
+      if (page.children && hasPage(page.children)) return true;
+    }
+    return false;
+  };
+
   for (const section of docsStructure) {
-    if (section.pages.some((p) => p.slug === slug)) return section;
+    if (hasPage(section.pages)) return section;
   }
   return undefined;
 }
 
 export function getAdjacentPages(slug: string): { prev?: DocPage; next?: DocPage } {
-  const allPages = docsStructure.flatMap((s) => s.pages);
+  const flattenPages = (pages: DocPage[]): DocPage[] => {
+    return pages.reduce((acc: DocPage[], page) => {
+      acc.push(page);
+      if (page.children) acc.push(...flattenPages(page.children));
+      return acc;
+    }, []);
+  };
+
+  const allPages = docsStructure.flatMap((s) => flattenPages(s.pages));
   const idx = allPages.findIndex((p) => p.slug === slug);
   return {
     prev: idx > 0 ? allPages[idx - 1] : undefined,
