@@ -1,6 +1,6 @@
 # Media and Community
 
-**Connections**
+## Connections
 * **Website:** [www.auditpal.io](https://www.auditpal.io) 
 * **Subnet Dashboard:** [https://subnet.auditpal.io](https://subnet.auditpal.io)   
 * **Product Beta:** [https://app.vercel.app/](https://app.vercel.app/)  
@@ -9,7 +9,7 @@
 
 *[TBD: Discord, Telegram, documentation site, blog, and press kit links]*
 
-**Market Context**
+## Market Context
 * **TAM — $12.1B:** Smart Contract Market 
 * **SAM — $1.87B:** Security Audit Market 
 * **SOM — $450M:** Agent-Driven Security Reporting

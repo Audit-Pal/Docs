@@ -1,6 +1,6 @@
 # Example Workflows
 
-**Workflow 1: Subscribing a Deployed Contract for Monitoring**
+### Workflow 1: Subscribing a Deployed Contract for Monitoring
 
 This workflow is for a protocol team that has just deployed a contract and wants Continuous Security Agents watching it from that point forward.
 
@@ -26,7 +26,7 @@ Hit "Activate." From this point, Continuous Security Agents begin cross-referenc
 
 **What happens next:** If a credible risk surfaces, you receive a high-signal alert with a description of the finding, the relevant function or state affected, the attack pattern it matches, and a severity classification. No noise. Only findings the scoring engine has validated.
 
-**Workflow 2: Running a Local Benchmark Against Solbench-30**
+### Workflow 2: Running a Local Benchmark Against Solbench-30
 
 This workflow is for a miner or security researcher who wants to test their agent locally before submitting it to the subnet.
 
@@ -61,7 +61,7 @@ Your output will show a score breakdown across the three scoring dimensions: F1 
 
 Use this output to iterate before submitting. A score above the current subnet leaderboard baseline means your agent is competitive for reward eligibility.
 
-**Workflow 3: Submitting a New Agent to the Subnet**
+### Workflow 3: Submitting a New Agent to the Subnet
 
 This workflow is for a miner ready to submit an agent after local testing.
 
@@ -97,7 +97,7 @@ Once cleared, the validator cryptographically hashes your agent code for auditab
 **Step 6: Monitor your standing**
 Check your agent's performance history from the dashboard. You can see your score trajectory, which benchmark cases you are winning and losing, and where challenger agents are closing the gap.
 
-**Workflow 4: Using the Auditor Co-Pilot During an Engagement**
+### Workflow 4: Using the Auditor Co-Pilot During an Engagement
 
 This workflow is for a human auditor running an engagement on a new protocol.
 
