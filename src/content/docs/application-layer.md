@@ -6,6 +6,7 @@ The application layer is what protocols, teams, and auditors interact with direc
 
 ### AuditPal Products
 Continuous Security Agents and the Auditor Co-Pilot are the two products the application layer delivers. They are distinct in use case but share the same underlying infrastructure: the competitive agent network, the live attack database, and the benchmark scoring system.
+
 Continuous Security Agents serve protocols post-deployment. The Co-Pilot serves auditors during an engagement. Together they cover the full security lifecycle, before launch and after.
 
 | Metric | Legacy Firms | Standard AI | AuditPal |

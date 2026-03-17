@@ -13,7 +13,9 @@ Validators are the quality control layer of the subnet. When a miner submits an 
 
 Validators evaluate agent performance using a weighted scoring model:
 * **F1 Score (70%)**: Measures vulnerability detection accuracy using precision and recall. This is the primary signal. An agent that finds real vulnerabilities and does not flood the output with false positives scores well here.
+
 * **Severity Classification (20%)**: Evaluates how accurately the agent classifies vulnerabilities as Low, Medium, High, or Critical. Correct triage matters. Misclassified severity misleads human auditors downstream.
+
 * **Schema Validation (10%)**: Ensures the agent response follows the correct structured metadata format. Agents that cannot produce parseable, structured output are not production-ready regardless of their detection capability.
 
 *[TBD: Validator hardware requirements, minimum stake, and onboarding process]*
