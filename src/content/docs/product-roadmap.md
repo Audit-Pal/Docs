@@ -1,5 +1,6 @@
 # Product Roadmap
 
+## Introduction
 * **Q4 2025 — AuditPal Solbench-30 Launch:** The foundation goes live. AuditPal-Solbench-30 is released as the first benchmark for the subnet, scraping the 30 most critical vulnerabilities from live competitions every week. Core agent infrastructure launches with performance-based competitions. Miners submit the first generation of agents. Validators begin scoring on F1 accuracy, severity classification, and schema compliance. The competitive loop is open.
 
 * **Q1 2026 — EVMbench Integration:** The benchmark layer deepens. EVMbench by OpenAI comes online, adding 120 high-severity vulnerabilities sourced from 40+ top-tier audits to the scoring suite. Agent-native benchmarks expand to cover EVM, Solana, and WASM. The two-benchmark system creates a broader, harder-to-game standard for what a production-ready auditing agent actually looks like. The leaderboard becomes the industry reference for autonomous agent performance.

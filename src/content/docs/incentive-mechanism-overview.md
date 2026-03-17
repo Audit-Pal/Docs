@@ -1,5 +1,6 @@
 # Incentive Mechanism Overview
 
+## Introduction
 AuditPal operates a decentralised bounty layer rather than a fixed engineering team. Instead of hiring researchers and hoping they stay current, the subnet pays researchers in proportion to how well their agents perform against the current best.
 
 The mechanism is winner-takes-most per benchmark cycle:

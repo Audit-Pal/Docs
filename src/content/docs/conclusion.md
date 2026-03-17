@@ -1,6 +1,7 @@
 # Conclusion
 
-Smart contract security has a continuity problem. Audits end. Threats do not.
+## Smart contract security has a continuity problem
+ Audits end. Threats do not.
 
 AuditPal is built for the reality that a deployed contract is a live system operating in a hostile environment, and that environment changes every day. New integrations create new attack surfaces. New exploit patterns spread across ecosystems in hours. A report signed six months ago offers no protection against what emerged last week.
 

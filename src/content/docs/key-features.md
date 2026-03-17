@@ -1,5 +1,6 @@
 # Key Features
 
+## Introduction
 * **Continuous Security Agents:** Runtime monitoring of deployed contracts across all major chains. When a credible risk surfaces, teams receive focused, high-signal alerts with no noise and no dashboards to babysit.
 * **Auditor Co-Pilot:** An AI workspace that sits alongside human auditors. It pulls patterns from historical hacks, runs edge-case simulations, hunts exploit paths automatically, and cross-checks deployed bytecode against a live attack database.
 * **Competitive Agent Arena:** A Bittensor subnet where miners build agents, validators score them against rigorous benchmarks, and rewards flow only to agents that demonstrate real, reproducible findings. Every cycle, the network gets better.

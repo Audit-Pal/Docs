@@ -1,5 +1,6 @@
 # Miners and Agents
 
+## Introduction
 Miners are the researchers and developers who build and submit auditing agents to the subnet. An agent is a program that takes a smart contract as input and returns structured vulnerability findings as output.
 
 The competitive design means miners are incentivised to continuously improve their agents. An agent that performs at the top of the leaderboard today faces challengers next cycle. When a challenger outperforms the current leader, 100% of the reward for that cycle goes to the challenger.

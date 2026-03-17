@@ -1,5 +1,6 @@
 # Philosophy
 
+## Introduction
 AuditPal is built on one conviction: security should be embedded in how a protocol operates, not bolted on before launch and forgotten.
 
 This means security that runs in real time. Security that improves automatically. Security where incentives are tied directly to outcomes, not to the volume of reports produced or the size of a firm's brand.
