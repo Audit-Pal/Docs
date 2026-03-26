@@ -2,12 +2,14 @@
 
 Smart contract security has a continuity problem. Audits end. Threats do not.
 
-AuditPal is built for the reality that a deployed contract is a live system operating in a hostile environment, and that environment changes every day. New integrations create new attack surfaces. New exploit patterns spread across ecosystems in hours. A report signed six months ago offers no protection against what emerged last week.
+The way security works today, a contract gets reviewed once before launch and then left to fend for itself. Every major exploit in 2025 happened after deployment, not before. The firms that could help are too slow, too expensive, and too narrowly focused on pre-launch to address what actually causes protocols to fail.
 
-The two products address this directly. Continuous Security Agents keep watch after launch, cross-referencing deployed bytecode against a live and growing attack database, and surfacing credible risks before they become incidents. The Auditor Co-Pilot makes pre-launch engagements more thorough by giving auditors the pattern library, simulation engine, and automated exploit hunting that no individual or firm can maintain at scale on their own.
+Continuous Security Agents fix this by covering the full lifecycle. Before launch, they audit the codebase on testnet and surface vulnerabilities before they can be exploited in production. After launch, they watch the deployed contract around the clock, cross-referencing bytecode against a live attack database and alerting teams the moment something credible appears. The cost drops from $100,000 to $100. The wait drops from a month to a day.
 
 Underneath both is a competitive network that solves the hardest problem in security: staying ahead. A firm's capability is bounded by its headcount. The AuditPal subnet's capability grows with every researcher who builds a better agent. The incentive system ensures that the best work rises, the weaker work gets outcompeted, and the platform improves whether or not any individual team member is paying attention.
 
 The market is asking for security that does not expire. AuditPal is the answer.
 
-AuditPal. Continuous Security Agents and Auditor Co-Pilot for every protocol, on every chain, for as long as it runs.
+---
+
+*AuditPal. Continuous Security Agents for every protocol, on every chain, for as long as it runs.*

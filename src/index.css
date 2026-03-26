@@ -188,6 +188,10 @@
     @apply text-base leading-7 mb-4 text-foreground/85;
   }
 
+  .doc-prose img {
+    @apply block w-full h-auto max-h-[560px] object-contain rounded-xl border border-border bg-secondary/20 mb-6;
+  }
+
   .doc-prose ul {
     @apply list-disc pl-6 mb-4 space-y-1;
   }

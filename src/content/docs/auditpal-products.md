@@ -1,15 +1,6 @@
-# AuditPal Products
+# AuditPal Operating System
 
-## Introduction
-Continuous Security Agents and the Auditor Co-Pilot are the two products the application layer delivers. They are distinct in use case but share the same underlying infrastructure: the competitive agent network, the live attack database, and the benchmark scoring system.
+## Core Infrastructure
+The AuditPal OS is the infrastructure layer that ties everything together. It connects the application layer to the competitive subnet, manages the live attack database, coordinates the benchmark scoring system, and routes findings from agents to the teams that need them.
 
-## Lifecycle Coverage
-Continuous Security Agents serve protocols post-deployment. The Co-Pilot serves auditors during an engagement. Together they cover the full security lifecycle, before launch and after.
-
-## Performance Comparison
-
-| Metric | Legacy Firms | Standard AI | AuditPal |
-| :--- | :--- | :--- | :--- |
-| **Speed** | 4 to 8 weeks | Minutes | Seconds |
-| **Accuracy**| Human error | 70% noise | Agent-verified |
-| **Proof** | PDF report | Text summary | Executable PoC |
+The OS is what makes continuous security possible at scale. It is not a dashboard or a reporting tool. It is the engine that keeps agents running, benchmarks real-time, and alerts flowing across every chain, every contract, every hour of the day.

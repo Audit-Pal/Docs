@@ -1,10 +1,11 @@
 # Media and Community
 
-## Connections
-* **Website:** [www.auditpal.io](https://www.auditpal.io) 
-* **Subnet Dashboard:** [https://subnet.auditpal.io](https://subnet.auditpal.io)   
-* **Product Beta:** [https://app.vercel.app/](https://app.vercel.app/)  
-* **Subnet Repo:** [github.com/Audit-Pal/auditpal-subnet](https://github.com/Audit-Pal/auditpal-subnet) 
-* **X/Twitter:** [x.com/auditpal_io](https://x.com/auditpal_io)
+Website: https://www.auditpal.io
 
-*[TBD: Discord, Telegram, documentation site, blog, and press kit links]*
+Subnet Dashboard: https://subnet.auditpal.io
+
+Product Beta: https://app.auditpal.io/
+
+Subnet Repo: https://github.com/Audit-Pal/auditpal-subnet
+
+X/Twitter: https://x.com/auditpal_io

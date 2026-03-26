@@ -1,17 +1,10 @@
 # Application Layer
 
-## Introduction
-The application layer is what protocols, teams, and auditors interact with directly. It has two surfaces:
-* **For deployed protocols:** Subscribe a contract and the Continuous Security Agents take over. Real-time monitoring, live attack database cross-referencing, and high-signal alerts when something credible appears. No manual intervention required during normal operations.
-* **For audit teams:** The Auditor Co-Pilot workspace. Historical hack pattern library, edge-case simulation engine, automated exploit hunting, bytecode cross-check, function and flow decomposition, and false positive reduction. All designed to make an engagement more thorough and faster, not to replace the auditor's judgment.
+## The application layer is what protocols and teams interact with directly
+It has one surface, but it spans the full contract lifecycle from development to continuous post-launch auditing.
 
-## AuditPal Products
-Continuous Security Agents and the Auditor Co-Pilot are the two products the application layer delivers. They are distinct in use case but share the same underlying infrastructure: the competitive agent network, the live attack database, and the benchmark scoring system.
+### Pre-launch
+Before a contract goes live, teams subscribe to their testnet contract address. The Continuous Security Agent audits the codebase, flags vulnerabilities by severity, and surfaces findings before they can be exploited in production.
 
-Continuous Security Agents serve protocols post-deployment. The Co-Pilot serves auditors during an engagement. Together they cover the full security lifecycle, before launch and after.
-
-| Metric | Legacy Firms | Standard AI | AuditPal |
-| :--- | :--- | :--- | :--- |
-| **Speed** | 4 to 8 weeks | Minutes | Seconds |
-| **Accuracy**| Human error | 70% noise | Agent-verified |
-| **Proof** | PDF report | Text summary | Executable PoC |
+### Post-launch
+Once the contract is on mainnet, the agent keeps running. It cross-references deployed bytecode against the live attack database around the clock and alerts teams the moment something critical appears. Auditing does not stop at launch; it continues as long as the contract is live.

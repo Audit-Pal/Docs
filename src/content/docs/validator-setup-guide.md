@@ -1,4 +1,7 @@
 # Validator Setup Guide
 
-## Introduction
-[TBD: Full step-by-step guide for setting up a validator node, including hardware requirements, Bittensor wallet configuration, sandbox environment setup, connecting to the subnet, scoring configuration, and monitoring tools]
+This guide is for operators who want to run a validator node on the AuditPal subnet.
+
+Requirements: TBD
+
+Steps: TBD
