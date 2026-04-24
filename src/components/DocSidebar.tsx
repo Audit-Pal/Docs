@@ -126,7 +126,7 @@ export function DocSidebar({ mobileOpen, onClose }: DocSidebarProps) {
         {/* Footer */}
         <div className="px-4 py-3 border-t border-border">
           <div className="text-xs text-muted-foreground">
-            Powered by <span className="font-medium text-foreground">AuditPal Docs</span>
+            Powered by <span className="font-medium text-foreground">AuditPal Subnet Docs</span>
           </div>
         </div>
       </aside>

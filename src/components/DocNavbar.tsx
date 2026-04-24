@@ -43,9 +43,9 @@ export function DocNavbar({ onMenuToggle }: DocNavbarProps) {
               className="w-6 h-6 dark:invert dark:brightness-200 transition-all"
             />
             <span className="text-lg font-semibold text-foreground tracking-tight">
-              AuditPal Docs
+              AuditPal Subnet Docs
             </span>
-            <span className="hidden sm:inline text-xs text-muted-foreground font-medium px-1.5 py-0.5 rounded bg-secondary">
+            <span className="inline-flex text-xs text-muted-foreground font-medium px-1.5 py-0.5 rounded bg-secondary">
               v2.0
             </span>
           </Link>
